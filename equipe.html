@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Footer Html" content="Insano Academico." />
+    <meta name="description" content="Site da nossa atlética."/>
+    <meta name="author" content="Samuel Mauli" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="robots" content="index, follow"/>
+
+    <link rel="stylesheet" type="text/css" href="equipe.css">
+    <title>Insano Acadêmico</title>
+</head>
+
+<body id="body">
+    <!-- Cabeçalho -->
+    <nav id="nav">
+        <div id="logo">
+            <h1>Insano Academico</h1>
+        </div>
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <a href="index.html">HOME</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="equipe.html">EQUIPES</a>
+            <a href="singin.html">ACESSE</a>
+        </ul>
+    </nav>
+
+    <!-- Corpo - Tela de Cadastro -->
+    <div class="container_sobre">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br>
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+            <label>Gênero:</label><br>
+            <input type="radio" id="masculino" name="genero" value="Masculino" required>
+            <label for="masculino">Masculino</label><a class="a">|</a>
+            <input type="radio" id="feminino" name="genero" value="Feminino" required>
+            <label for="feminino">Feminino</label><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
+
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso" required>
+                <option value=" "></option>
+                <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                <option value="Banco de Dados">Banco de Dados</option>
+                <option value="Ciência da Computação">Ciência da Computação</option>
+                <option value="Rede de Computadores">Rede de Computadores</option>
+                <option value="Sistemas de Informação">Sistemas de Informação</option>
+                <option value="Sistemas para a Internet">Sistemas para a Internet</option>
+            </select><br>
+
+            <label for "esportes">Esportes:</label>
+            <select id="esportes" name="esportes" required>
+                <option value=" "></option>
+                <option value="Futebol de Campo">Futebol de Campo</option>
+                <option value="Futsal">Futsal</option>
+                <option value="Fut7">Fut7</option>
+                <option value="Handebol">Handebol</option>
+                <option value="Voleibol">Voleibol</option>
+                <option value="Basquete">Basquete</option>
+                <option value="Vôlei de Areia">Vôlei de Areia</option>
+                <option value="Tênis de mesa">Tênis de mesa</option>
+                <option value="Judô">Judô</option>
+                <option value="Natação">Natação</option>
+                <option value="Atletismo">Atletismo</option>
+                <option value="Xadrez">Xadrez</option>
+            </select><br>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+    <!-- Tabela -->
+    <div class="table-container" >
+        <h2>Membros Cadastrados</h2>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Idade</th>
+                    <th>Data de Nascimento</th>
+                    <th>Gênero</th>
+                    <th>Endereço</th>
+                    <th>Curso</th>
+                    <th>Esportes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td>Silva</td>
+                    <td>25</td>
+                    <td>1998-03-15</td>
+                    <td>Masculino</td>
+                    <td>Rua ABC, 123</td>
+                    <td>Análise e Desenvolvimento de Sistemas</td>
+                    <td>Futebol de Campo, Futsal</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Souza</td>
+                    <td>30</td>
+                    <td>1992-08-20</td>
+                    <td>Feminino</td>
+                    <td>Rua XYZ, 456</td>
+                    <td>Ciência da Computação</td>
+                    <td>Voleibol, Basquete</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Santos</td>
+                    <td>28</td>
+                    <td>1994-11-10</td>
+                    <td>Masculino</td>
+                    <td>Rua 123, Apt. 789</td>
+                    <td>Sistemas para a Internet</td>
+                    <td>Tênis de Mesa, Natação</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>Oliveira</td>
+                    <td>22</td>
+                    <td>1999-05-03</td>
+                    <td>Feminino</td>
+                    <td>Rua ABC, 789</td>
+                    <td>Sistemas de Informação</td>
+                    <td>Handebol, Vôlei de Areia</td>
+                </tr>
+                <tr>
+                    <td>Luiz</td>
+                    <td>Ferreira</td>
+                    <td>27</td>
+                    <td>1995-07-25</td>
+                    <td>Masculino</td>
+                    <td>Rua XYZ, Apt. 101</td>
+                    <td>Banco de Dados</td>
+                    <td>Judô, Atletismo</td>
+                </tr>
+                <tr>
+                    <td>Sara</td>
+                    <td>Rodrigues</td>
+                    <td>29</td>
+                    <td>1993-12-18</td>
+                    <td>Feminino</td>
+                    <td>Rua 456, 789</td>
+                    <td>Análise e Desenvolvimento de Sistemas</td>
+                    <td>Xadrez</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<!-- fOOTER--> 
+
+<footer>
+    <div class="footer-arrow">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+        </svg>
+    </div>
+    
+    <footer class="main_footer container">
+        
+        <div class="content">
+            
+            <div class="colfooter">
+                
+                <h4 class="titleFooter"> Menu</h4>
+                
+                <ul>
+                
+                  <li><a href="index.html" title="Home">Página Inícial</a></li>
+                  <li><a href="sobre.html" title="Sobre">Sobre a Atletica</a></li>
+                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScTegasOg0AsCnWLyc7CWlge53PeKWlnLIwqy2lk9__BOMezw/viewform" title="faça parte" target="_blank">Faça parte da nossa Equipe</a></li>
+                  <li><a href="https://cheersapp.com.br/insano-aaati-up~7508" title="Compre" target="_blank">Apoie a Atletica</a></li>
+                
+                </ul>
+            
+            </div><!--Col Footer 1-->        
+            
+            <div class="colfooter">
+               
+                <h4 class="titleFooter">Contato</h4>
+                <p><i class="icon icon-mail"></i> contato@seusite.com.br</p>
+                <p><i class="icon icon-phone"></i> 41 99948-2644</p>
+                <p><i class="icon icon-phone"></i> 41 9509-0761</p>
+            
+            </div><!--Col Footer 2-->
+            
+            <div class="colfooter">
+               
+                <h4 class="titleFooter"> Redes Sociais</h4>
+  
+                <a href="https://www.instagram.com/insanoacademico/" class="redesocial" target="_blank"><span> <i class="icon icon-instagram"></i>Instagram</span></a>            
+                <a href="#" class="redesocial"><span> <i class="icon icon-youtube" target="_blank"></i>Youtube</span></a>            
+                <a href="https://discord.com/invite/EyzrXKbE7Y" class="redesocial" target="_blank"><span> <i class="icon icon-Discord"></i>Discord</span></a>            
+                <a href="https://chat.whatsapp.com/LGbjrL6qGaX2IEdCKpxfjt" class="redesocial" target="_blank"><span> <i class="icon icon-whatsapp"></i>Grupo do Whats</span></a>  
+                <a href="https://cheersapp.com.br/insano-aaati-up~7508" class="redesocial" target="_blank"><span> <i class="icon icon-cheers">Cheers</i></span></a>
+                            
+            </div>
+            
+            <div class="clear"></div>
+        
+        </div>
+        
+        <div class="main_footer_copy">
+            
+            <p class="m-b-footer"> Insano Acadêmico Copyright (c) 2023 , todos os direitos reservados.</p> 
+            <p class="by"><i class="icon icon-heart-3"></i><a href="https://www.linkedin.com/in/samuelmauli/" title="SamuelMauli" target="_blank">Desenvolvido por: Samuel Mauli</a></p>
+        
+        </div>
+    </footer>
+  
+            <script src="script.js"></script>
+        </body>
+        </html>
+  
